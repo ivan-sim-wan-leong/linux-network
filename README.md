@@ -23,3 +23,5 @@ ip route show
 # default via 192.168.0.254 dev eno1 proto static metric 102
 # ...
 ```
+
+Ref: https://unix.stackexchange.com/questions/245208/modifying-existing-route-entry-in-linux
