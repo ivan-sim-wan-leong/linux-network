@@ -16,6 +16,8 @@ sudo ip route del default via 172.20.74.1
 
 # 3. Add the route back with the updated metric
 sudo ip route add default via 172.20.74.1 metric 101
+# or add without a metric if `RTNETLINK answers: File exists`
+sudo ip route add default via 172.20.74.1
 
 # 4. Check again
 ip route show
