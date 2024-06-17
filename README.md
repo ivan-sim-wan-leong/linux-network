@@ -27,3 +27,21 @@ ip route show
 ```
 
 Ref: https://unix.stackexchange.com/questions/245208/modifying-existing-route-entry-in-linux
+
+## Query DNS Servers
+
+```bash
+dig redhat.com
+# Just answer
+dig redhat.com +noall +answer
+# For mail exchange record
+dig redhat.com MX +noall +answer
+# For name server
+dig redhat.com NX +noall +answer
+# For all records
+dig redhat.com ANY +noall +answer
+# For shell script
+dig redhat.com +short
+# Reverse your query (ip -> server name)
+dig -x 52.200.142.250 +short
+```
