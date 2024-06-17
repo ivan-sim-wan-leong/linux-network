@@ -45,3 +45,14 @@ dig redhat.com +short
 # Reverse your query (ip -> server name)
 dig -x 52.200.142.250 +short
 ```
+
+## Add Local Hostnames
+
+This will be something useful if you do not want to type out the IP address.
+```bash
+sudoedit /etc/hosts
+# At the bottom of the file add your local hostnames
+192.168.50.115 dyson-bluefan.com
+# Quit and save. Then ping
+ping dyson-bluefan.com
+```
