@@ -26,6 +26,10 @@ ip route show
 # ...
 ```
 
+## Change network interface metric
+sudo ip route del 192.168.1.0/24
+sudo ip route add 192.168.1.0/24 dev wlo1 metric 50
+
 Ref: https://unix.stackexchange.com/questions/245208/modifying-existing-route-entry-in-linux
 
 ## Query DNS Servers
